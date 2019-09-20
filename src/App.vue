@@ -1,28 +1,31 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Landscape/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Landscape from './components/Landscape.vue'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    Landscape
   }
 }
 </script>
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  -moz-osx-font-smoothing: grayscale;  
+}
+
+.heebo {
+  font-family: 'Heebo', sans-serif;
+}
+
+.playfair{
+  font-family: 'Playfair Display', serif;
 }
 </style>
