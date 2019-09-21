@@ -1,7 +1,12 @@
 <template>
   <div>
     <template v-for="(response, index) in responses">
-      <span :key="`landscape-span-${index}`" class="heebo f1 measure" :style="`color: ${index % 2 ? 'red' : 'black' };`">{{response.answer}}</span>
+      <span 
+        :key="`landscape-span-${index}`" 
+        class="heebo f1 measure" 
+        :style="`color: ${index % 2 ? 'red' : 'black' };`">
+          {{response.answer}}
+      </span>
     </template>
   </div>
 </template>
@@ -16,7 +21,7 @@ export default {
     }
   },
   mounted() {
-    fetch("https://laser-leotard.glitch.me/questions")
+    fetch("https://laser-leotard.glitch.me/questions/1")
       .then(d=>d.json())
       .then(d => {
         for(let i = 0; i < d.length; i++) {
