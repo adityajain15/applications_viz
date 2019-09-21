@@ -6,6 +6,7 @@
 
 <script>
 import Landscape from './components/Landscape.vue'
+import { clearInterval } from 'timers';
 
 export default {
   name: 'app',

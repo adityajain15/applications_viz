@@ -12,20 +12,30 @@ export default {
   data(){
     return {
       responses: [],
-      timeOutID: null
+      ids: [],
+      interval: null
     }
   },
   mounted() {
-    fetch("https://laser-leotard.glitch.me/questions")
+    this.getResponses()
+    this.interval = setInterval(this.getResponses, 3000)
+  },
+  methods: {
+    getResponses() {
+      fetch("https://laser-leotard.glitch.me/questions/1")
       .then(d=>d.json())
       .then(d => {
         for(let i = 0; i < d.length; i++) {
-          this.responses.push(d[i])
+          if(!this.ids.includes(d[i].id)){
+            this.ids.push(d[i].id)
+            this.responses.push(d[i])
+          }
         }
       })
+    }
   },
-  methods: {
-
+  beforeDestroy() {
+    clearInterval(this.interval)
   }
 }
 </script>
