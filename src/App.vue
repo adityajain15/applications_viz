@@ -1,17 +1,20 @@
 <template>
   <div id="app">
-    <Landscape/>
+    <!-- <Landscape/> -->
+    <Map />
   </div>
 </template>
 
 <script>
 import Landscape from './components/Landscape.vue'
+import Map from './components/Map.vue'
 import { clearInterval } from 'timers';
 
 export default {
   name: 'app',
   components: {
-    Landscape
+    Landscape,
+    Map
   }
 }
 </script>

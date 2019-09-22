@@ -1,7 +1,12 @@
 <template>
   <div>
     <template v-for="(response, index) in responses">
-      <span :key="`landscape-span-${index}`" class="heebo f1 measure" :style="`color: ${index % 2 ? 'red' : 'black' };`">{{response.answer}}</span>
+      <span 
+        :key="`landscape-span-${index}`" 
+        class="heebo f1 measure" 
+        :style="`color: ${index % 2 ? 'red' : 'black' };`">
+          {{response.answer}}
+      </span>
     </template>
   </div>
 </template>
