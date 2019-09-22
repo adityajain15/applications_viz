@@ -1,17 +1,19 @@
 <template>
   <div id="app">
-    <!-- <Landscape/> -->
-    <Map />
+    <ImageSearch/>
+    <Landscape/>
+    <!--<Map />-->
   </div>
 </template>
 
 <script>
 import Landscape from './components/Landscape.vue'
 import Map from './components/Map.vue'
-
+import ImageSearch from './components/ImageSearch.vue'
 export default {
   name: 'app',
   components: {
+    ImageSearch,
     Landscape,
     Map
   }
