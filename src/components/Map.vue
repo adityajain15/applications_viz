@@ -39,6 +39,11 @@ export default {
       .then(d => {
         for(let i = 0; i < d.length; i++) {
           if(!this.ids.includes(d[i].id)){
+            this.ids.push(d[i].id)
+            this.responses.push(d[i])
+            if (d[i]['answer'] == 'null') {
+                return
+            }
             var el = document.createElement('div')
             el.className = 'marker'
             el.style.backgroundColor = this.getRandomColor()
@@ -48,8 +53,6 @@ export default {
             new mapboxgl.Marker(el)
             .setLngLat(JSON.parse(d[i]['answer']))
             .addTo(this.map)
-            this.ids.push(d[i].id)
-            this.responses.push(d[i])
           }
         }
       })
