@@ -1,7 +1,8 @@
 <template>
   <div id="app">
-    <ImageSearch/>
+    <!--<ImageSearch/>-->
     <Landscape/>
+    <Temperature/>
     <!--<Map />-->
   </div>
 </template>
@@ -10,11 +11,13 @@
 import Landscape from './components/Landscape.vue'
 import Map from './components/Map.vue'
 import ImageSearch from './components/ImageSearch.vue'
+import Temperature from './components/Temperature.vue'
 export default {
   name: 'app',
   components: {
     ImageSearch,
     Landscape,
+    Temperature,
     Map
   }
 }
