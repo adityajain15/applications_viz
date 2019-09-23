@@ -3,10 +3,11 @@
     <div ref="canvas"></div>
   </div>
 </template>
+
 <script>
-let spring = 0.1;
-let gravity = 0;
-let friction = -.1;
+let spring = 0.4;
+let gravity = -.1;
+let friction = -.4;
 let balls = []
 
 class Ball {

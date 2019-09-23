@@ -2,9 +2,10 @@
   <div id="app">
     <!-- <Landscape/> -->
     <!-- <Map /> -->
-    <DotFrequency />
+    <!-- <DotFrequency /> -->
     <!--<ImageSearch/>-->
-    <Temperature/>
+    <!-- <Temperature/> -->
+    <SingleText />
   </div>
 </template>
 
@@ -14,6 +15,7 @@ import Map from './components/Map.vue'
 import DotFrequency from './components/DotFrequency.vue'
 import ImageSearch from './components/ImageSearch.vue'
 import Temperature from './components/Temperature.vue'
+import SingleText from './components/SingleText.vue'
 export default {
   name: 'app',
   components: {
@@ -21,7 +23,8 @@ export default {
     Landscape,
     Map,
     DotFrequency,
-    Temperature    
+    Temperature,
+    SingleText
   }
 }
 </script>
