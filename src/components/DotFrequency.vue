@@ -68,7 +68,6 @@ class Ball {
   }
 
   display() {
-
     this.ps.fill(this.color)
     this.ps.noStroke()
     this.ps.ellipse(this.x, this.y, this.diameter, this.diameter);
@@ -138,7 +137,6 @@ export default {
           )
           balls.push(ball)
         }
-
       })
     }
   }
