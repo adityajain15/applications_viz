@@ -1,0 +1,16 @@
+[
+  {
+    "sign": "Breakfast",
+    "symbol": "🥗"
+  },
+{
+    "sign": "Brunch",
+    "symbol": "🥑🍞"
+  },{
+    "sign": "Lunch",
+    "symbol": "🌯"
+  },{
+    "sign": "Dinner",
+    "symbol": "🍖"
+  }
+]

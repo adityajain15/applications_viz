@@ -20,6 +20,7 @@ export default {
       randomResponse: null,
     }
   },
+  props: ['endpoint'],
   mounted() {
     this.getResponses()
     this.getRandomResponse()
@@ -28,7 +29,7 @@ export default {
   },
   methods: {
     getResponses() {
-      fetch("https://laser-leotard.glitch.me/questions/1")
+      fetch(`https://laser-leotard.glitch.me/questions/${this.endpoint}`)
       .then(d=>d.json())
       .then(d => {
         for(let i = 0; i < d.length; i++) {

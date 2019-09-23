@@ -1,19 +1,19 @@
 <template>
   <div class="mv5">
-    <template v-for="(sign, index) in map">
-      <div class="db mv3 heebo" :key="`astro-${index}`">
-        <span class="">{{sign.symbol}}</span>
-        <span class="red">{{sign.sign}}</span>
-        <span class="pl3">{{counts.map(d=>d===sign.sign?1:0).reduce((a,b)=>a+b,0)}}</span>
+    <template v-for="(meal, index) in map">
+      <div class="db mv3 heebo" :key="`meal-${index}`">
+        <span class="">{{meal.symbol}}</span>
+        <span class="red">{{meal.sign}}</span>
+        <span class="pl3">{{counts.map(d=>d===meal.sign?1:0).reduce((a,b)=>a+b,0)}}</span>
       </div>
     </template>
   </div>
 </template>
 
 <script>
-import starsigns from '../../public/starsigns.json'
+import brunch from '../../public/brunch.json'
 export default {
-  name: 'AstroSigns',
+  name: 'Brunch',
   data(){
     return {
       responses: [],
@@ -24,16 +24,16 @@ export default {
     }
   },
   mounted() {
-    this.map = starsigns
-    this.map.forEach(sign => {
-      this.counts[sign.sign] = 0
+    this.map = brunch
+    this.map.forEach(meal => {
+      this.counts[meal.sign] = 0
     })
     this.getResponses()
     this.interval = setInterval(this.getResponses, 3000)
   },
   methods: {
     getResponses() {
-      fetch("https://laser-leotard.glitch.me/questions/7")
+      fetch("https://laser-leotard.glitch.me/questions/14")
       .then(d=>d.json())
       .then(d => {
         for(let i = 0; i < d.length; i++) {
