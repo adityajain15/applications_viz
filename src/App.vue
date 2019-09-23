@@ -10,6 +10,7 @@
     <ScaleViz :domain="[1,15]" url="10" heading="How many languages do you speak?"/>
     <AstroSigns/>
     <Brunch/>
+    <RestaurantsMap />
   </div>
 </template>
 
@@ -18,6 +19,7 @@ import Landscape from './components/Landscape.vue'
 import Map from './components/Map.vue'
 import DotFrequency from './components/DotFrequency.vue'
 import ImageSearch from './components/ImageSearch.vue'
+import Temperature from './components/Temperature.vue'
 import RestaurantsMap from './components/RestaurantsMap'
 import SingleText from './components/SingleText.vue'
 import AstroSigns from './components/AstroSigns.vue'
@@ -31,7 +33,8 @@ export default {
     Map,
     AstroSigns,
     DotFrequency,
-    RestaurantsMap,
+    Temperature,
+    RestaurantsMap, 
     SingleText,
     ScaleViz,
     Brunch
