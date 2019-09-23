@@ -2,7 +2,8 @@
   <div id="app">
     <!--<ImageSearch/>-->
     <Landscape/>
-    <Temperature/>
+    <Temperature lowlabel="️⛄" highlabel="🌞️" :domain="[0,120]" url="1"/>
+    <Temperature lowlabel="1" highlabel="20" :domain="[1,20]" url="1"/>
     <!--<Map />-->
   </div>
 </template>
