@@ -3,6 +3,7 @@
     <div ref="canvas"></div>
   </div>
 </template>
+
 <script>
 let spring = 0.9
 let gravity = -0.0001

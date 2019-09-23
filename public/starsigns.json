@@ -1,0 +1,40 @@
+[
+  {
+    "sign": "Aquarius (Jan 20 - Feb 18)",
+    "symbol": "♒️"
+  },
+  {
+    "sign": "Pisces (Feb 19 - March 20)",
+    "symbol": "♓️"
+  },{
+    "sign": "Aries (March 21 - April 19)",
+    "symbol": "♈️"
+  },{
+    "sign": "Taurus (April 20 - May 20)",
+    "symbol": "♉️"
+  },{
+    "sign": "Gemini (May 21 - June 21)",
+    "symbol": "♊️"
+  },{
+    "sign": "Cancer (June 21 - July 22)",
+    "symbol": "♋️"
+  },{
+    "sign": "Leo (July 23 - Aug 22)",
+    "symbol": "♌️"
+  },{
+    "sign": "Virgo (Aug 23 - Sep 22)",
+    "symbol": "♍️"
+  },{
+    "sign": "Libra (Sep 23 - Oct 22)",
+    "symbol": "♎️"
+  },{
+    "sign": "Scorpio (Oct 23 - Nov 21)",
+    "symbol": "♏️"
+  },{
+    "sign": "Sagittarius (Nov 22 - Dec 21)",
+    "symbol": "♐️"
+  },{
+    "sign": "Capricorn (Dec 22 - Jan 19)",
+    "symbol": "♑️"
+  }
+]

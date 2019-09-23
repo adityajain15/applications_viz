@@ -1,11 +1,15 @@
 <template>
   <div id="app">
-    <!-- <Landscape/> -->
     <!-- <Map /> -->
     <DotFrequency />
     <!--<ImageSearch/>-->
-    <!-- <Temperature/> -->
     <!-- <RestaurantsMap /> -->
+    <ImageSearch :endpoint="4"/>
+    <ImageSearch :endpoint="1"/>
+    <ScaleViz lowlabel="️⛄" highlabel="🌞️" :domain="[0,120]" url="11" heading="What is your ideal temperature?"/>
+    <ScaleViz :domain="[1,15]" url="10" heading="How many languages do you speak?"/>
+    <AstroSigns/>
+    <Brunch/>
   </div>
 </template>
 
@@ -14,17 +18,23 @@ import Landscape from './components/Landscape.vue'
 import Map from './components/Map.vue'
 import DotFrequency from './components/DotFrequency.vue'
 import ImageSearch from './components/ImageSearch.vue'
-import Temperature from './components/Temperature.vue'
 import RestaurantsMap from './components/RestaurantsMap'
+import SingleText from './components/SingleText.vue'
+import AstroSigns from './components/AstroSigns.vue'
+import ScaleViz from './components/ScaleViz.vue'
+import Brunch from './components/Brunch.vue'
 export default {
   name: 'app',
   components: {
     ImageSearch,
     Landscape,
     Map,
+    AstroSigns,
     DotFrequency,
-    Temperature,
-    RestaurantsMap   
+    RestaurantsMap,
+    SingleText,
+    ScaleViz,
+    Brunch
   }
 }
 </script>
