@@ -2,10 +2,10 @@
   <div id="app">
     <!-- <Landscape/> -->
     <!-- <Map /> -->
-    <!-- <DotFrequency /> -->
+    <DotFrequency />
     <!--<ImageSearch/>-->
     <!-- <Temperature/> -->
-    <RestaurantsMap />
+    <!-- <RestaurantsMap /> -->
   </div>
 </template>
 
