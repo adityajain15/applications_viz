@@ -16,6 +16,8 @@ import Landscape from './components/Landscape.vue'
 import Map from './components/Map.vue'
 import DotFrequency from './components/DotFrequency.vue'
 import ImageSearch from './components/ImageSearch.vue'
+import Temperature from './components/Temperature.vue'
+import SingleText from './components/SingleText.vue'
 import AstroSigns from './components/AstroSigns.vue'
 import ScaleViz from './components/ScaleViz.vue'
 import Brunch from './components/Brunch.vue'
@@ -27,6 +29,8 @@ export default {
     Map,
     AstroSigns,
     DotFrequency,
+    Temperature,
+    SingleText
     ScaleViz,
     Brunch
   }
