@@ -1,19 +1,22 @@
 <template>
   <div id="app">
     <!-- <Landscape/> -->
-    <Map />
+    <!-- <Map /> -->
+    <DotFrequency />
   </div>
 </template>
 
 <script>
 import Landscape from './components/Landscape.vue'
 import Map from './components/Map.vue'
+import DotFrequency from './components/DotFrequency.vue'
 
 export default {
   name: 'app',
   components: {
     Landscape,
-    Map
+    Map,
+    DotFrequency
   }
 }
 </script>
