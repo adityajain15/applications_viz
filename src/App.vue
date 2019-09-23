@@ -6,6 +6,9 @@
     <!--<ImageSearch/>-->
     <!-- <Temperature/> -->
     <SingleText />
+    <Landscape/>
+    <ScaleViz lowlabel="️⛄" highlabel="🌞️" :domain="[0,120]" url="1"/>
+    <ScaleViz lowlabel="1" highlabel="20" :domain="[1,20]" url="1"/>
   </div>
 </template>
 
@@ -16,6 +19,7 @@ import DotFrequency from './components/DotFrequency.vue'
 import ImageSearch from './components/ImageSearch.vue'
 import Temperature from './components/Temperature.vue'
 import SingleText from './components/SingleText.vue'
+import ScaleViz from './components/ScaleViz.vue'
 export default {
   name: 'app',
   components: {
@@ -25,6 +29,7 @@ export default {
     DotFrequency,
     Temperature,
     SingleText
+    ScaleViz    
   }
 }
 </script>
