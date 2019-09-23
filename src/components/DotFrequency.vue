@@ -5,9 +5,9 @@
 </template>
 
 <script>
-let spring = 0.4;
-let gravity = -.1;
-let friction = -.4;
+let spring = 0.9
+let gravity = -0.0001
+let friction = -.7
 let balls = []
 
 class Ball {
@@ -134,7 +134,7 @@ export default {
             i,
             balls,
             this.p,
-            this.ids.length
+            d.length
           )
           balls.push(ball)
         }
