@@ -7,6 +7,7 @@
     <Landscape/>
     <ScaleViz lowlabel="️⛄" highlabel="🌞️" :domain="[0,120]" url="1"/>
     <ScaleViz lowlabel="1" highlabel="20" :domain="[1,20]" url="1"/>
+    <AstroSigns/>
   </div>
 </template>
 
@@ -15,6 +16,7 @@ import Landscape from './components/Landscape.vue'
 import Map from './components/Map.vue'
 import DotFrequency from './components/DotFrequency.vue'
 import ImageSearch from './components/ImageSearch.vue'
+import AstroSigns from './components/AstroSigns.vue'
 import ScaleViz from './components/ScaleViz.vue'
 export default {
   name: 'app',
@@ -22,6 +24,7 @@ export default {
     ImageSearch,
     Landscape,
     Map,
+    AstroSigns,
     DotFrequency,
     ScaleViz    
   }
