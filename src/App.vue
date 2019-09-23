@@ -5,8 +5,8 @@
     <DotFrequency />
     <!--<ImageSearch/>-->
     <Landscape/>
-    <Temperature lowlabel="️⛄" highlabel="🌞️" :domain="[0,120]" url="1"/>
-    <Temperature lowlabel="1" highlabel="20" :domain="[1,20]" url="1"/>
+    <ScaleViz lowlabel="️⛄" highlabel="🌞️" :domain="[0,120]" url="1"/>
+    <ScaleViz lowlabel="1" highlabel="20" :domain="[1,20]" url="1"/>
   </div>
 </template>
 
@@ -15,7 +15,7 @@ import Landscape from './components/Landscape.vue'
 import Map from './components/Map.vue'
 import DotFrequency from './components/DotFrequency.vue'
 import ImageSearch from './components/ImageSearch.vue'
-import Temperature from './components/Temperature.vue'
+import ScaleViz from './components/ScaleViz.vue'
 export default {
   name: 'app',
   components: {
@@ -23,7 +23,7 @@ export default {
     Landscape,
     Map,
     DotFrequency,
-    Temperature    
+    ScaleViz    
   }
 }
 </script>

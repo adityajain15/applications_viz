@@ -18,7 +18,7 @@
 const dummyData = [{"number":1,"question":"What does the landscape of your home look like?","answer":1,"id":1,"createdAt":"2019-09-22T19:26:04.489Z","updatedAt":"2019-09-22T19:26:04.489Z"},{"number":1,"question":"What does the landscape of your home look like?","answer":1,"id":2,"createdAt":"2019-09-22T19:26:04.490Z","updatedAt":"2019-09-22T19:26:04.490Z"},{"number":1,"question":"What does the landscape of your home look like?","answer":2,"id":3,"createdAt":"2019-09-22T19:26:04.492Z","updatedAt":"2019-09-22T19:26:04.492Z"},{"number":1,"question":"What does the landscape of your home look like?","answer":90,"id":4,"createdAt":"2019-09-22T19:26:04.492Z","updatedAt":"2019-09-22T19:26:04.492Z"},{"number":1,"question":"What does the landscape of your home look like?","answer":20,"id":5,"createdAt":"2019-09-22T19:26:04.493Z","updatedAt":"2019-09-22T19:26:04.493Z"}]
 import { scaleLinear } from 'd3-scale'
 export default {
-  name: 'Temperature',
+  name: 'ScaleViz',
   data(){
     return {
       responses: [],
