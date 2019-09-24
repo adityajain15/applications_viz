@@ -31,7 +31,7 @@ export default {
       this.counts[sign.sign] = 0
     })
     this.getResponses()
-    this.interval = setInterval(this.getResponses, 3000)
+    this.interval = setInterval(this.getResponses, 5000)
   },
   methods: {
     getResponses() {

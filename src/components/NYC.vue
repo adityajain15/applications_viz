@@ -25,7 +25,7 @@ export default {
   },
   mounted() {
     this.getResponses()
-    this.interval = setInterval(this.getResponses, 3000)
+    this.interval = setInterval(this.getResponses, 5000)
   },
   methods: {
     getResponses() {

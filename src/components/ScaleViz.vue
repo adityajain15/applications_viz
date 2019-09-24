@@ -36,7 +36,7 @@ export default {
     this.windowResize()
     this.getResponses()
     window.addEventListener('resize', this.windowResize)
-    this.interval = setInterval(this.getResponses, 3000)
+    this.interval = setInterval(this.getResponses, 5000)
   },
   methods: {
     windowResize() {

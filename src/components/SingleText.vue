@@ -23,7 +23,7 @@ export default {
         this.text = document.getElementById('single_text')
         this.getResponses()
 
-        this.interval = setInterval(this.getResponses, 3000)
+        this.interval = setInterval(this.getResponses, 5000)
         this.textInterval = setInterval(this.displayNewText, 5000)
     },
 

@@ -27,7 +27,7 @@ export default {
   mounted() {
     this.getResponses()
     this.getRandomResponse()
-    this.interval.push(setInterval(this.getResponses, 3000))
+    this.interval.push(setInterval(this.getResponses, 5000))
     this.interval.push(setInterval(this.getRandomResponse, 3000))
   },
   methods: {
