@@ -3,7 +3,7 @@
     <div class="v-mid dtc tc">
       <template v-for="index in 16">
         <div class="db mv3 heebo f4" :key="`sib-${index}`">
-          <span class="red">{{index - 1}}</span>
+          <span class="red">{{index - 1 == 0 ? 'only child' : index - 1 == 1 ? index - 1 + ' sibling' : index - 1 + ' siblings'}}</span>
           <span class="pl3">{{counts.map(d => d === (index - 1) ? 1 : 0).reduce((a,b)=>a+b,0)}}</span>
         </div>
       </template>
@@ -49,5 +49,15 @@ export default {
 </script>
 
 <style scoped>
-
+  .red {
+  color: #6c53c5;
+    font-family: 'Montserrat';
+    font-variant: all-petite-caps;
+    font-weight: 900;
+    letter-spacing: 1px;
+    margin-left: 12px;
+  }
+  .pl3 {
+    color:  #4c4c4c;
+  }
 </style>

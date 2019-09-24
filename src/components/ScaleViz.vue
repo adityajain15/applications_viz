@@ -65,6 +65,9 @@ export default {
 </script>
 
 <style scoped>
+#app {
+background-color: #f3f3f3;
+}
 svg{
 }
 path{

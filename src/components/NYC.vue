@@ -49,5 +49,15 @@ export default {
 </script>
 
 <style scoped>
-
+  .red {
+  color: #6c53c5;
+    font-family: 'Montserrat';
+    font-variant: all-petite-caps;
+    font-weight: 900;
+    letter-spacing: 1px;
+    margin-left: 12px;
+  }
+  .pl3 {
+    color:  #4c4c4c;
+  }
 </style>

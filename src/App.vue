@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <img src="./assets/map.jpg" class="db center vh-100" v-if="index == -1"/>
-    <Slide v-if="index == 0" text="http://laser-leotard.glitch.me" background="#ffcc00" textcolor="black"/>
+    <Slide v-if="index == 0" text="https://laser-leotard.glitch.me" background="#ffcc00" textcolor="black"/>
     <Slide v-if="index == 1" text="Where are you from?"/>
     <Map v-if="index == 2"/>
     <Slide v-if="index == 3" text="What is the dish that best represents your hometown or family?" background="tomato" textcolor="white"/>
@@ -78,7 +78,24 @@ export default {
   },
   mounted(){
     window.addEventListener('keydown', ev => {
-      this.index = ev.which === 37 ? this.index == -1 ? -1 : this.index - 1 : this.index == 35 ? 35 : this.index + 1
+      // console.log(ev.which)
+      if (ev.which === 39) {
+        if (this.index == 35) {
+          return
+        } else {
+          this.index += 1
+        }
+      }
+      else if (ev.which === 37) {
+        if (this.index == -1) {
+          return
+        } else {
+          this.index -=1
+        }
+      }
+      // // console.log(ev.which)
+      // this.index = ev.which === 37 ? this.index == -1 ? -1 : this.index - 1 : this.index == 35 ? 35 : this.index + 1
+      // console.log(this.index)
     })
   }
 }

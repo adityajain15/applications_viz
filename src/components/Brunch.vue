@@ -56,5 +56,13 @@ export default {
 </script>
 
 <style scoped>
+.red, .pl3 {
+    font-family: 'Lato', sans-serif;
 
+}
+.red {
+    color: #3d5e69;
+    font-variant: all-petite-caps;
+    margin-left: 15px;
+}
 </style>

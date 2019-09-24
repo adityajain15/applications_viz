@@ -4,8 +4,8 @@
       <template v-for="(sign, index) in map">
         <div class="db mv3 heebo f3" :key="`astro-${index}`">
           <span class="">{{sign.symbol}}</span>
-          <span class="red">{{sign.sign}}</span>
-          <span class="pl3">{{counts.map(d=>d===sign.sign?1:0).reduce((a,b)=>a+b,0)}}</span>
+          <span class="sign">{{sign.sign}}</span>
+          <span class="pl3 num">{{counts.map(d=>d===sign.sign?1:0).reduce((a,b)=>a+b,0)}}</span>
         </div>
       </template>
     </div>
@@ -56,5 +56,15 @@ export default {
 </script>
 
 <style scoped>
-
+  .sign {
+  color: #6c53c5;
+    font-family: 'Montserrat';
+    font-variant: all-petite-caps;
+    font-weight: 900;
+    letter-spacing: 1px;
+    margin-left: 12px;
+  }
+  .num {
+    color:  #4c4c4c;
+  }
 </style>

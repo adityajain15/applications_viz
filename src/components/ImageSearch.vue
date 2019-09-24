@@ -62,5 +62,13 @@ export default {
 </script>
 
 <style scoped>
-
+.vh-100 {
+  background-color: #eeffff7d;
+}
+img {
+  margin: 20px;
+}
+span {
+  font-family: 'Montserrat', sans-serif;
+}
 </style>
