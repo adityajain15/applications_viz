@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <img src="./assets/map.jpg" class="db center vh-100" v-if="index == -1"/>
     <Slide v-if="index == 0" text="http://laser-leotard.glitch.me" background="#ffcc00" textcolor="black"/>
     <Slide v-if="index == 1" text="Where are you from?"/>
     <Map v-if="index == 2"/>
@@ -72,12 +73,12 @@ export default {
   },
   data(){
     return {
-      index: 0
+      index: -1
     }
   },
   mounted(){
     window.addEventListener('keydown', ev => {
-      this.index = ev.which === 37 ? this.index == 0 ? 0 : this.index - 1 : this.index == 35 ? 35 : this.index + 1
+      this.index = ev.which === 37 ? this.index == -1 ? -1 : this.index - 1 : this.index == 35 ? 35 : this.index + 1
     })
   }
 }
