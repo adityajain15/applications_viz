@@ -18,7 +18,7 @@ export default {
             displayedEls: []
         }
     },
-    
+    props: ['url'],
     mounted() {
         this.text = document.getElementById('single_text')
         this.getResponses()
@@ -81,7 +81,7 @@ export default {
         },
         
         getResponses() {
-            fetch("https://laser-leotard.glitch.me/questions/1")
+            fetch(`https://laser-leotard.glitch.me/questions/${this.url}`)
             .then(d=>d.json())
             .then(d => {
                 for(let i = 0; i < d.length; i++) {

@@ -1,11 +1,10 @@
 <template>
-  <div class="dt vh-100 w-100">
-    <div class="dtc v-mid tc">
-      <template v-for="(meal, index) in map">
-        <div class="db mv3 heebo f2" :key="`meal-${index}`">
-          <span class="">{{meal.symbol}}</span>
-          <span class="red">{{meal.sign}}</span>
-          <span class="pl3">{{counts.map(d=>d===meal.sign?1:0).reduce((a,b)=>a+b,0)}}</span>
+  <div class="mv5 dt vh-75 w-100">
+    <div class="v-mid dtc tc">
+      <template v-for="index in 15">
+        <div class="db mv3 heebo f4" :key="`sib-${index}`">
+          <span class="red">{{index}}</span>
+          <span class="pl3">{{counts.map(d => d === (index) ? 1 : 0).reduce((a,b)=>a+b,0)}}</span>
         </div>
       </template>
     </div>
@@ -13,29 +12,23 @@
 </template>
 
 <script>
-import brunch from '../../public/brunch.json'
 export default {
-  name: 'Brunch',
+  name: 'Language',
   data(){
     return {
       responses: [],
-      map: [],
       counts: [],
       ids: [],
       interval: null
     }
   },
   mounted() {
-    this.map = brunch
-    this.map.forEach(meal => {
-      this.counts[meal.sign] = 0
-    })
     this.getResponses()
     this.interval = setInterval(this.getResponses, 3000)
   },
   methods: {
     getResponses() {
-      fetch("https://laser-leotard.glitch.me/questions/14")
+      fetch("https://laser-leotard.glitch.me/questions/10")
       .then(d=>d.json())
       .then(d => {
         for(let i = 0; i < d.length; i++) {

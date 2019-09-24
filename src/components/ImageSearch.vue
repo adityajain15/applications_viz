@@ -1,15 +1,18 @@
 <template>
-  <div>
-    
-      <div v-if="randomResponse" class="mv5 db w-100 tc">
-        <img v-if="randomResponse.photo" :src="`https://farm${randomResponse.photo.farm}.staticflickr.com/${randomResponse.photo.server}/${randomResponse.photo.id}_${randomResponse.photo.secret}.jpg`"/>
-        <span class="db f1 heebo">{{randomResponse.data.answer}}</span>
-      </div>
-    
+  <div class="vh-100 dt w-100 heebo">
+    <div v-if="randomResponse" class="dtc v-mid tc">
+      <img v-if="randomResponse.photo" :src="`https://farm${randomResponse.photo.farm}.staticflickr.com/${randomResponse.photo.server}/${randomResponse.photo.id}_${randomResponse.photo.secret}.jpg`"/>
+      <span class="db f1 heebo">{{randomResponse.data.answer}}</span>
+    </div>
+    <div v-else class="dtc v-mid tc">
+      <img src="./../assets/El.jpg" class="vh-50"/>
+      <span class="db f1 heebo">Hang on while doggo fetches images from internetz</span>
+    </div>
   </div>
 </template>
 
 <script>
+
 export default {
   name: 'ImageSearch',
   data(){

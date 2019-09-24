@@ -1,12 +1,14 @@
 <template>
-  <div class="mv5">
-    <template v-for="(sign, index) in map">
-      <div class="db mv3 heebo" :key="`astro-${index}`">
-        <span class="">{{sign.symbol}}</span>
-        <span class="red">{{sign.sign}}</span>
-        <span class="pl3">{{counts.map(d=>d===sign.sign?1:0).reduce((a,b)=>a+b,0)}}</span>
-      </div>
-    </template>
+  <div class="mv5 dt vh-50 w-100">
+    <div class="v-mid dtc tc">
+      <template v-for="(sign, index) in map">
+        <div class="db mv3 heebo f3" :key="`astro-${index}`">
+          <span class="">{{sign.symbol}}</span>
+          <span class="red">{{sign.sign}}</span>
+          <span class="pl3">{{counts.map(d=>d===sign.sign?1:0).reduce((a,b)=>a+b,0)}}</span>
+        </div>
+      </template>
+    </div>
   </div>
 </template>
 

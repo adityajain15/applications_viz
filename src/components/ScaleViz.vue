@@ -1,16 +1,17 @@
 <template>
-  <div class="w-75 h4 pa4 center heebo mv5">
-    <h1 class="f2 tc lh-solid">{{heading}}</h1>
-    <span class="">{{lowlabel}}️</span>️️️
-    <svg class="w-90 v-mid" ref="svg">
-      <path :d="`M${margin_h},${height / 2}L${width},${height / 2}`"/>
-      <template v-for="tick in ticks">
-        <path :d="`M${scale(tick)},${height/2}L${scale(tick)},${height/2 + 5}`"/>
-        <text class="heebo f7" :x="scale(tick)" y="4em">{{tick}}</text>
-      </template>
-      <circle v-for="response in responses" r="2" :cx="scale(response.answer)" :cy="height/2 + (Math.random() < 0.5 ? Math.random() * -10 : Math.random() * 10)"/>
-    </svg>
-    <span class="">{{highlabel}}</span>
+  <div class="dt vh-100 w-80 center">
+    <div class="dtc v-mid">
+      <span class="">{{lowlabel}}️</span>️️️
+      <svg class="w-90 h4" ref="svg">
+        <path :d="`M${margin_h},${height / 2}L${width},${height / 2}`"/>
+        <template v-for="tick in ticks">
+          <path :d="`M${scale(tick)},${height/2}L${scale(tick)},${height/2 + 5}`"/>
+          <text class="heebo v-btm" :x="scale(tick)" y="1em">{{tick}}</text>
+        </template>
+        <circle v-for="response in responses" r="2" :cx="scale(response.answer)" :cy="height/2 - Math.random() * 10"/>
+      </svg>
+      <span class="">{{highlabel}}</span>
+    </div>
   </div>
 </template>
 
@@ -65,7 +66,6 @@ export default {
 
 <style scoped>
 svg{
-  height: 100%;
 }
 path{
   stroke:black;
