@@ -34,7 +34,7 @@ export default {
         for(let i = 0; i < d.length; i++) {
           if(!this.ids.includes(d[i].id)){
             //this.counts[d[i].answer] += 1
-            this.counts.push(d[i].answer)
+            this.counts.push(parseInt(d[i].answer))
             this.ids.push(d[i].id)
             this.responses.push(d[i])
           }
