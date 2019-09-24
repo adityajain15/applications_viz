@@ -63,10 +63,10 @@ export default {
     font-weight: 900;
     letter-spacing: 1px;
     margin-left: 12px;
-    font-size: 45px;
+    font-size: 45px !important;
   }
   .num {
     color:  #4c4c4c;
-    font-size: 43px;
+    font-size: 43px !important;
   }
 </style>

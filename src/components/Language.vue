@@ -51,13 +51,13 @@ export default {
 <style scoped>
 .pl3, .red {
   font-family: 'Lato';
-  font-size: 35px;
+  font-size: 35px !important;
 }
 .red {
   font-weight: 800;
   font-variant: all-petite-caps;
   font-size: 38px !important;
-  color: #a248a2;
+  color: #a248a2 !important;
   letter-spacing: 1px;
 }
 </style>

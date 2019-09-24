@@ -16,5 +16,6 @@ h1 {
   font-family: 'Nanum Gothic', sans-serif;
   font-weight: 600;
   letter-spacing: 1px;
+  padding: 50px;
 }
 </style>
