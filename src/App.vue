@@ -35,7 +35,7 @@
     <NYC v-if="index == 32"/>
     <Slide v-if="index == 33" text="What is your favorite place in NYC?"/>
     <SingleText v-if="index == 34" url="16"/>
-    <!--<DotFrequency v-if="index == 3"/>-->
+    <DotFrequency v-if="index == 35"/>
   </div>
 </template>
 
@@ -77,7 +77,7 @@ export default {
   },
   mounted(){
     window.addEventListener('keydown', ev => {
-      this.index = ev.which === 37 ? this.index == 0 ? 0 : this.index - 1 : this.index == 34 ? 34 : this.index + 1
+      this.index = ev.which === 37 ? this.index == 0 ? 0 : this.index - 1 : this.index == 35 ? 35 : this.index + 1
     })
   }
 }
