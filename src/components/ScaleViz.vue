@@ -8,7 +8,7 @@
           <path :d="`M${scale(tick)},${height/2}L${scale(tick)},${height/2 + 5}`"/>
           <text class="heebo v-btm" :x="scale(tick)" y="1em">{{tick}}</text>
         </template>
-        <circle v-for="response in responses" r="2" :cx="scale(response.answer)" :cy="height/2 - Math.random() * 10"/>
+        <circle v-for="response in responses" r="10" :cx="scale(response.answer)" :cy="height/2 - Math.random() * 10"/>
       </svg>
       <span class="">{{highlabel}}</span>
     </div>

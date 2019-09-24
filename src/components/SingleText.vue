@@ -112,7 +112,7 @@ export default {
     height: 100vh;
     justify-content: center;
     font-family: 'Nanum Gothic', sans-serif;
-    font-size: 40px;
+    font-size: 60px;
     line-height: 50px;
     transition: fade .5s ease-in-out forwards;
     text-align: center;

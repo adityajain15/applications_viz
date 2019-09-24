@@ -24,7 +24,7 @@ export default {
           center: [-73.879, 40.712], // starting position [lng, lat]
           zoom: 10.74 // starting zoom
         })    
-        setTimeout(this.getResponses, 500)
+        this.interval = setInterval(this.getResponses, 5000)
 
   },
   methods: {
@@ -40,6 +40,7 @@ export default {
           if(!this.ids.includes(d[i].id)){
             this.ids.push(d[i].id)
             this.responses.push(d[i])
+            console.log(d[i]['answer'])
             if (d[i]['answer'] == null) {
                 continue
             }
@@ -49,9 +50,10 @@ export default {
             el.style.backgroundSize = 'cover'
             el.style.width = '25px'
             el.style.height = '25px'
-            
+
+            let latlng = JSON.parse(d[i]['answer'])
             new mapboxgl.Marker(el)
-            .setLngLat(JSON.parse(d[i]['answer']))
+            .setLngLat(latlng)
             .addTo(this.map)
           }
         }

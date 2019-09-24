@@ -60,9 +60,15 @@ export default {
     font-family: 'Lato', sans-serif;
 
 }
+
+.pl3 {
+  font-size: 66px;
+  margin-left: 25px;
+}
 .red {
     color: #3d5e69;
     font-variant: all-petite-caps;
     margin-left: 15px;
+    font-size: 80px;
 }
 </style>

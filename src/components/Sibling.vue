@@ -56,8 +56,10 @@ export default {
     font-weight: 900;
     letter-spacing: 1px;
     margin-left: 12px;
+    font-size: 28px;
   }
   .pl3 {
-    color:  #4c4c4c;
+    color:  #0f0e0e;
+    font-size: 30px;
   }
 </style>
